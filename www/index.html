@@ -6,10 +6,10 @@
         <meta name="format-detection" content="telephone=no" />
         <meta name="msapplication-tap-highlight" content="no" />
         <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
-        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
-        <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.css">
-		<script src="js/jquery-1.11.1.min.js"></script>
-		<script src="js/jquery.mobile-1.4.4.min.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, target-densitydpi=high-dpi, user-scalable=0" />
+		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.css">
+		<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+		<script src="http://code.jquery.com/mobile/1.4.4/jquery.mobile-1.4.4.min.js"></script>
 
 		<link rel="stylesheet" type="text/css" href="css/index.css" />
         <title>Urlaubskasse</title>
@@ -35,14 +35,70 @@
 		  <div data-position="fixed" data-role="footer">
 			<div data-role="navbar">
 			  <ul>
-				<li id="users">
-				  <a data-icon="home">Users</a>
+				<li >
+				  <a href="#home" data-icon="home">Users</a>
 				</li>
-				<li>
-				  <a data-icon="star">Buchung</a>
+				<li >
+				  <a href="#Buchung"data-icon="plus">Buchung</a>
 				</li>
-				<li>
-				  <a data-icon="star">Abrechnung</a>
+				<li >
+				  <a href="#abrechnung" data-icon="info">Abrechnung</a>
+				</li>
+			  </ul>
+			</div>
+		  </div>
+		</div>
+		<div id="Buchung" data-role="page">
+		  <div data-role="header" data-position="fixed">
+			<h3>Buchung</h3>
+		  </div>
+		  <div role="main" class="ui-content">
+			<ul data-role="listview" data-inset="true">
+			  <li data-role="list-divider">Urlaub</li>
+			  <li>
+				<a href="#">
+				  <img src="http://jqmdesigner.appspot.com/images/image.png" class="ui-li-icon">Thailand</a>
+			  </li>
+			  <li>
+				<a href="#">
+				  <img src="http://jqmdesigner.appspot.com/images/image.png" class="ui-li-icon">Dublin</a>
+			  </li>
+			</ul>
+		  </div>
+		  <div data-position="fixed" data-role="footer">
+			<div data-role="navbar">
+			  <ul>
+				<li >
+				  <a href="#home" data-icon="home">Users</a>
+				</li>
+				<li >
+				  <a href="#Buchung"data-icon="plus">Buchung</a>
+				</li>
+				<li >
+				  <a href="#abrechnung" data-icon="info">Abrechnung</a>
+				</li>
+			  </ul>
+			</div>
+		  </div>
+		</div>	
+		<div id="abrechnung" data-role="page">
+		  <div data-role="header" data-position="fixed">
+			<h3>Abrechnung</h3>
+		  </div>
+		  <div role="main" class="ui-content">
+			Hier kommt die Auswertung hin.
+		  </div>
+		  <div data-position="fixed" data-role="footer">
+			<div data-role="navbar">
+			  <ul>
+				<li >
+				  <a href="#home" data-icon="home">Users</a>
+				</li>
+				<li >
+				  <a href="#Buchung"data-icon="plus">Buchung</a>
+				</li>
+				<li >
+				  <a href="#abrechnung" data-icon="info">Abrechnung</a>
 				</li>
 			  </ul>
 			</div>
